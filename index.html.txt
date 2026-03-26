@@ -65,7 +65,7 @@
             border: 2px solid var(--primary);
         }
 
-        /* Botón Flotante de WhatsApp (Paso 8.1) */
+        /* Botón Flotante de WhatsApp */
         .whatsapp-float {
             position: fixed;
             width: 60px;
