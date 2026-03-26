@@ -6,19 +6,19 @@
     <title>Lefur | Panadería, Café y Restaurante - Experiencia VIP</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <style>
-        /* Paleta de Colores y Variables (Mantenemos la base profesional) */
+        /* Paleta de Colores y Variables */
         :root {
-            --primary: #D4A373; /* Dorado rústico */
-            --secondary: #3E2723; /* Café espresso oscuro */
-            --bg-light: #FAEDCD; /* Crema cálido */
+            --primary: #D4A373; 
+            --secondary: #3E2723; 
+            --bg-light: #FAEDCD; 
             --white: #FFFFFF;
             --whatsapp: #25D366;
             --text-dark: #2C1E16;
-            --overlay: rgba(0, 0, 0, 0.9); /* Fondo oscuro para fotos */
+            --overlay: rgba(0, 0, 0, 0.9); 
         }
 
         html {
-            scroll-behavior: smooth; /* Desplazamiento suave entre secciones */
+            scroll-behavior: smooth; 
         }
 
         body {
@@ -35,7 +35,7 @@
             color: var(--secondary);
         }
 
-        /* Navegación (Fixed) */
+        /* Navegación */
         header {
             background-color: rgba(255, 255, 255, 0.95);
             padding: 15px 50px;
@@ -72,7 +72,7 @@
 
         /* Hero Section */
         .hero {
-            height: 80vh; /* Un poco más baja para mostrar contenido rápido */
+            height: 80vh; 
             background: linear-gradient(rgba(62, 39, 35, 0.65), rgba(62, 39, 35, 0.7)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop') center/cover;
             display: flex;
             flex-direction: column;
@@ -81,7 +81,7 @@
             text-align: center;
             color: var(--white);
             padding: 0 20px;
-            margin-top: 70px; /* Espacio para el header fixed */
+            margin-top: 70px; 
         }
 
         .hero h1 {
@@ -206,23 +206,23 @@
             margin-bottom: 15px;
         }
 
-        /* === FUNCIONALIDAD MODAL (NUEVO) === */
+        /* Modal */
         .modal {
-            display: none; /* Oculto por defecto */
+            display: none; 
             position: fixed;
-            z-index: 2000; /* Por encima de todo */
+            z-index: 2000; 
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background-color: var(--overlay);
-            overflow-y: auto; /* Scroll si las fotos son muchas */
+            overflow-y: auto; 
             opacity: 0;
             transition: opacity 0.4s ease;
             display: flex;
             justify-content: center;
             align-items: center;
-            backdrop-filter: blur(5px); /* Efecto blur de fondo */
+            backdrop-filter: blur(5px); 
         }
 
         .modal.show {
@@ -231,7 +231,7 @@
         }
 
         .modal-content {
-            background-color: #1a1a1a; /* Fondo muy oscuro para el salón */
+            background-color: #1a1a1a; 
             padding: 40px;
             border-radius: 20px;
             width: 90%;
@@ -353,7 +353,7 @@
             <a href="#inicio">Inicio</a>
             <a href="#experiencia">Experiencia</a>
             <a href="#contacto">Ubicación</a>
-            <a href="javascript:void(0)" onclick="openVipModal()" style="color: var(--primary);">✨ Fotos VIP</a>
+            <a href="javascript:void(0)" onclick="openVipModal()" style="color: var(--primary);">✨ Rincón VIP</a>
         </nav>
     </header>
 
@@ -393,12 +393,12 @@
             </div>
 
             <div class="card" id="vip-card">
-                <img src="https://images.unsplash.com/photo-1596199349474-0f1e00e47081?q=80&w=2070&auto=format&fit=crop" alt="Salón VIP Leather Sofas">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000&auto=format&fit=crop" alt="Rincón VIP Íntimo Lefur">
                 <div class="card-content">
                     <span class="tag" style="background-color: var(--primary); color: var(--secondary);">Exclusividad</span>
-                    <h3>Salón VIP</h3>
-                    <p>Un espacio íntimo con sofás de cuero y luz cálida, ideal para reuniones privadas o cenas especiales. Disponible bajo reserva.</p>
-                    <button class="btn" onclick="openVipModal()" style="width: 100%; margin: 0; margin-top: auto;">✨ Ver fotos del Salón</button>
+                    <h3>Rincón VIP</h3>
+                    <p>Un acogedor espacio privado de 2x2 metros. Ideal para disfrutar en familia o en pareja con total tranquilidad y comodidad.</p>
+                    <button class="btn" onclick="openVipModal()" style="width: 100%; margin: 0; margin-top: auto;">✨ Ver Rincón VIP</button>
                 </div>
             </div>
 
@@ -425,18 +425,18 @@
 
     <div id="vipModal" class="modal" onclick="closeModalOutside(event)">
         <div class="modal-content">
-            <span class="close-modal" onclick="closeVipModal()">&times;</span>
-            <h2>Explora Nuestra Zona VIP</h2>
-            <p>Sofás de cuero, iluminación cálida y privacidad absoluta para tus momentos especiales.</p>
+            <span class="close-modal" onclick="closeVipModal()">×</span>
+            <h2>Tu Espacio Privado</h2>
+            <p>Un rincón de 2x2 metros, pensado exclusivamente para familias o parejas. Luz cálida, sofás de cuero y privacidad total.</p>
             
             <div class="gallery-grid">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070&auto=format&fit=crop" alt="Ambiente VIP Lefur Lámparas">
-                <img src="https://images.unsplash.com/photo-1596199349474-0f1e00e47081?q=80&w=2070&auto=format&fit=crop" alt="Sofás cuero VIP">
-                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2074&auto=format&fit=crop" alt="Mesa reservada VIP">
+                <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?q=80&w=1000&auto=format&fit=crop" alt="Mesa pequeña e íntima">
+                <img src="https://images.unsplash.com/photo-1560624052-449f5ddf0c31?q=80&w=1000&auto=format&fit=crop" alt="Detalle de sofá de cuero">
+                <img src="https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?q=80&w=1000&auto=format&fit=crop" alt="Luces cálidas colgantes">
             </div>
             
             <div style="text-align: center; margin-top: 30px;">
-                <a href="https://wa.me/1234567890?text=Hola Lefur, quiero reservar la Zona VIP" target="_blank" class="btn">Reservar este espacio ahora</a>
+                <a href="https://wa.me/1234567890?text=Hola Lefur, quiero reservar el Rincón VIP para mi familia" target="_blank" class="btn">Reservar este espacio ahora</a>
             </div>
         </div>
     </div>
@@ -444,32 +444,28 @@
     <script>
         const modal = document.getElementById("vipModal");
 
-        // Función para abrir el modal
         function openVipModal() {
-            modal.style.display = "flex"; // Asegurar que sea flex para centrar
+            modal.style.display = "flex"; 
             setTimeout(() => {
                 modal.classList.add("show");
-                document.body.style.overflow = "hidden"; // Evitar scroll en el fondo
-            }, 10); // Pequeño delay para la animación
+                document.body.style.overflow = "hidden"; 
+            }, 10); 
         }
 
-        // Función para cerrar el modal
         function closeVipModal() {
             modal.classList.remove("show");
             setTimeout(() => {
                 modal.style.display = "none";
-                document.body.style.overflow = "auto"; // Reactivar scroll
-            }, 400); // Esperar a que termine la animación
+                document.body.style.overflow = "auto"; 
+            }, 400); 
         }
 
-        // Cerrar si se hace clic fuera del contenido del modal
         function closeModalOutside(event) {
             if (event.target === modal) {
                 closeVipModal();
             }
         }
 
-        // Cerrar con la tecla Escape
         document.addEventListener('keydown', function(event) {
             if (event.key === "Escape" && modal.classList.contains("show")) {
                 closeVipModal();
